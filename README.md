@@ -7,11 +7,21 @@ This REST-API uses Flask and a SQLITE Database, to install the dependencies use 
  pip install flask flask-jsonpify flask-sqlalchemy flask-restful
 ````
 
+It is also possible to use the Dockerfile to run this App as a Container. To build this container use the following Command:
+````
+docker build -t simplerestapi:latest . 
+````
+
 ## Usage
 To Start the REST-API use the following Command:
 ````
 python simpleRESTAPI.py
 ````
+When using the Docker Version of the API, use the following command to start the REST API.
+````
+docker run -p 5002:5002 simplerestapi:latest
+````
+
 The API can be found at 127.0.0.1 on Port 5002. The following Requests are supported:
 * `GET /heroes` --> Show all heroes 
 * `GET /hero/<hero-id>`--> Show hero with id
