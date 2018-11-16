@@ -13,15 +13,16 @@ To Start the REST-API use the following Command:
 python simpleRESTAPI.py
 ````
 The API can be found at 127.0.0.1 on Port 5002. The following Requests are supported:
-`GET /heroes` --> Show all heroes 
-`GET /hero/<hero-id>`--> Show hero with id
-`PUT /hero/add` --> Add a new hero with these POST parameters: `hero_id, hero_name, hero_enemy, hero_cityId`
-`DELETE /hero/delete` --> delete a hero with a `hero_id` POST parameter
-`PATCH /hero/change`--> change values of hero with these POST parameters: `hero_id, hero_name, hero_enemy, hero_cityId`
+* `GET /heroes` --> Show all heroes 
+* `GET /hero/<hero-id>`--> Show hero with id
+* `PUT /hero/add` --> Add a new hero with these POST parameters: `hero_id, hero_name, hero_enemy, hero_cityId`
+* `DELETE /hero/delete` --> delete a hero with a `hero_id` POST parameter
+* `PATCH /hero/change`--> change values of hero with these POST parameters: `hero_id, hero_name, hero_enemy, hero_cityId`
 
-`GET /cities` --> Show all cities 
-`PUT /city/add` --> Add a new city with these POST parameters: `city_id, city_name`
-`DELETE /city/delete` --> delete a city with a `city_id` POST parameter
+
+* `GET /cities` --> Show all cities 
+* `PUT /city/add` --> Add a new city with these POST parameters: `city_id, city_name`
+* `DELETE /city/delete` --> delete a city with a `city_id` POST parameter
 
 
 ## the structure of the database
