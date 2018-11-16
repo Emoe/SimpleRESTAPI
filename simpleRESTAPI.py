@@ -91,4 +91,4 @@ api.add_resource(addCity, '/city/add',methods=['PUT'])
 api.add_resource(deleteCity, '/city/delete',methods=['DELETE','POST'])
 
 if __name__ == '__main__':
-     app.run(port='5002')
+     app.run(port='5002',host="0.0.0.0")
